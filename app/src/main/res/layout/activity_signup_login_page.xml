@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Signup_login_page"
+    android:background="@color/black">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="500dp"
+        android:layout_centerInParent="true"
+        style="@style/CardView.Light"
+        android:id="@+id/cardview_login"
+        android:elevation="5dp"
+        app:cardUseCompatPadding="true"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="5dp"
+        >
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/tv_intro"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Welcome to Chit-Chat. Let's setup your profile"
+                android:textSize="20sp"
+                android:padding="10dp"
+                android:layout_marginTop="20dp"
+                android:textColor="#00A0FF"
+                android:layout_alignParentTop="true">
+
+            </androidx.appcompat.widget.AppCompatTextView>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_signup"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_design"
+                android:text="Sign Up"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_below="@+id/tv_intro"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp">
+
+            </androidx.appcompat.widget.AppCompatButton>
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/btn_login"
+                android:layout_width="350dp"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_design"
+                android:text="Log in"
+                android:textStyle="italic"
+                android:textColor="@color/white"
+                android:textSize="14sp"
+                android:layout_below="@+id/btn_signup"
+                android:layout_centerInParent="true"
+                android:layout_marginTop="10dp">
+
+            </androidx.appcompat.widget.AppCompatButton>
+            <View
+                android:id="@+id/v_line"
+                android:layout_width="match_parent"
+                android:layout_height="2dp"
+
+                android:layout_below="@+id/btn_login"
+                android:layout_marginTop="10dp"
+                android:background="#000000"/>
+            <com.google.android.material.textview.MaterialTextView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:textSize="20sp"
+                android:text="OR"
+                android:id="@+id/tv_or"
+                android:layout_below="@id/v_line"
+                android:layout_centerInParent="true">
+            </com.google.android.material.textview.MaterialTextView>
+
+
+            <com.google.android.gms.common.SignInButton
+                android:id="@+id/google_sign_in"
+                android:layout_width="350dp"
+                android:layout_marginTop="10dp"
+                android:layout_below="@id/tv_or"
+                android:layout_centerInParent="true"
+                android:layout_height="wrap_content">
+
+            </com.google.android.gms.common.SignInButton>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</RelativeLayout>
